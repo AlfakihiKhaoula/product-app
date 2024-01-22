@@ -1,0 +1,49 @@
+<div>
+  <div class="card">
+    <div class="card-body">
+      <div class="card-body">
+        <!--{{keyword}}-->
+        <input type="text" [(ngModel)]="keyword">
+        <button (click)="getProducts()"  class="btn btn-outline-success">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Name</th> <th>Price</th> <th>Checked</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--tr *ngFor="let product of products$ | async"-->
+        <tr *ngFor="let product of products">
+          <td>{{product.name}} </td>
+          <td>{{product.price}}</td>
+          <td>
+            <button (click)="handelCheckProduct(product)" class=" btn btn-outline-success">
+              <i [class]="product.checked? 'bi bi-check' : 'bi bi-circle' ">
+              </i></button>
+          </td>
+          <td>
+            <button (click)="handelDelete(product)" class="btn btn-outline-danger">
+              <i class="bi bi-trash"></i>
+            </button>
+          </td>
+          <td>
+            <button (click)="handelEdit(product)" class="btn btn-outline-success">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    <!--  <ul class="nav nav-pills">
+        <li *ngFor="let page of [].constructor(this.totalPages); let i =index">
+          <button (click)="handleGotoPage(i+1)" class="btn-outline-success m-1">
+            {{(i+1)}}
+          </button>
+        </li>
+      </ul>-->
+    </div>
+  </div>
+</div>

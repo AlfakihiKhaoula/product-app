@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 4,
+      "name": "Printer",
+      "price": 5600,
+      "checked": false
+    },
+    {
+      "id": 4,
+      "name": "mousse",
+      "price": 5600,
+      "checked": true
+    },
+    {
+      "id": 5,
+      "name": "smartphone",
+      "price": 5600,
+      "checked": true
+    },
+    {
+      "name": "prod",
+      "price": "2541",
+      "checked": true,
+      "id": 6
+    },
+    {
+      "name": "motorola 10",
+      "price": "3000",
+      "checked": true,
+      "id": 7
+    },
+    {
+      "name": "motorola 11",
+      "price": "3000",
+      "checked": true,
+      "id": 7
+    },
+    {
+      "name": "hzhh",
+      "price": "012",
+      "checked": true,
+      "id": 8
+    },
+    {
+      "name": "new",
+      "price": "010",
+      "checked": true,
+      "id": 9
+    }
+  ]
+}
