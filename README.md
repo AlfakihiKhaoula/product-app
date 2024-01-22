@@ -10,3 +10,6 @@
     <li>Pagination.</li>
     <li>Editing a Product.</li>
 </ul>
+<img src="images/1.png">
+<img src="images/2.png">
+<img src="images/3.png">
